@@ -2,7 +2,6 @@
 
 * {
     box-sizing: border-box;
-    background-color: #EFEFEF;
 }
 
 body {
@@ -10,14 +9,10 @@ body {
     line-height: 1.6;
 }
 
-p {
-    font-size: 1em;
-    margin-bottom: 1.8em;
-}
-
 a {
     text-decoration: none;
 }
+
 
 img {
     max-width: 100%;
@@ -25,16 +20,13 @@ img {
 
 figure {
     margin: 0;
-    line-height: 0;
-    position: relative;
+    max-width: 100%;
 }
 
 figcaption {
     font-size: .9em;
     line-height: 1.5;
-    color: #fff;
     padding: 1em;
-    position: absolute;
     bottom: 0;
     width: 100%;
 }
@@ -48,7 +40,6 @@ figcaption {
     margin: 0;
 }
 
-
 .title,
 .main-nav a {
     text-align: center;
@@ -58,7 +49,7 @@ figcaption {
 }
 
 .main-nav a {
-    font-size: .95em;
+    font-size: 1em;
     color: black;
     text-transform: uppercase;
     background-color: white;
@@ -68,6 +59,7 @@ figcaption {
 .main-nav a:hover {
     color: darkgrey;
 }
+
 
 /* - - - - (Layout Containers) - - - - */
 
@@ -81,6 +73,35 @@ figcaption {
 }
 
 .main-header {
+    background-color: #F8F8F8;
     padding-top: 1em;
     padding-bottom: 5em;
+}
+
+.portfolio-nav {
+    background-color: #FFF;
+}
+
+/* - - - - (Images) - - - - */
+
+.profile {
+    text-align: center;
+    line-height: 1.5;
+    width: 100%;
+    padding-top: 4em;
+    padding-bottom: 2em;
+    padding-left: 1em;
+    padding-right: 1em;
+}
+
+.bio {
+    font-size: 1.2em;
+}
+
+/* - - - - Float clearfix - - - - */
+
+.clearfix::after {
+    content: " ";
+    display: table;
+    clear: both;
 }
