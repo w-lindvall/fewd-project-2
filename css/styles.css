@@ -35,6 +35,9 @@ a {
 .bio {
   background: #f7f5f0;
   text-align: center;
+  margin: 0;
+  padding-top: .5em;
+  padding-bottom: 3em;
 }
 
 /* Main Header */
@@ -58,4 +61,51 @@ a {
 
 .main-nav a:hover {
   color: darkgrey;
+}
+
+/* Bio */
+.bio-img {
+  margin-top: 7px;
+  margin-bottom: 1em;
+  max-width: 70%;
+}
+
+.bio-text {
+  font-size: 1.2em;
+  color: #808080;
+}
+
+/* Portfolio */
+.portfolio {
+  padding-top: 2em;
+  padding-bottom: 2em;
+}
+.portfolio-img {
+  max-width: 100%;
+}
+
+.container figure {
+  padding-bottom: 3em;
+}
+
+/* Contact */
+footer {
+  padding-top: 2em;
+  padding-bottom: 2em;
+  background: #f7f5f0;
+}
+
+.footer-name {
+  display: block;
+  float: left;
+}
+
+.footer-top {
+  display: block;
+  float: right;
+}
+
+.contact {
+  font-size: 1.2em;
+  color: #808080;
 }
