@@ -1,107 +1,61 @@
-/* - - - -  Base Element Styles - - - - */
-
-* {
-    box-sizing: border-box;
+/* Global Layout Set-up */
+* { 
+  box-sizing: border-box;
 }
-
+  
 body {
-    font-family: 'Roboto', sans-serif;
-    line-height: 1.6;
+  margin: 0;
+  padding: 0;
+  line-height: 1.6;
+  text-align: center;
+  font-family: 'Roboto', sans-serif;
 }
 
+h2,
+h3 {
+  font-size: 1.2em;
+}
+
+h3 {
+  font-weight: lighter;
+}
+
+/* Link Styles */
 a {
-    text-decoration: none;
+  text-decoration: none;
 }
 
-
-img {
-    max-width: 100%;
+/* Section Styles */
+.container {
+  width: 90%;
+  margin: 0 auto;
 }
 
-figure {
-    margin: 0;
-    max-width: 100%;
+.main-header,
+.bio {
+  background: #f7f5f0;
+  text-align: center;
 }
 
-figcaption {
-    font-size: .9em;
-    line-height: 1.5;
-    padding: 1em;
-    bottom: 0;
-    width: 100%;
-}
-
-/* - - - -  Base Layout Styles - - - - */
-
-/* - - - - (Navigation) - - - - */
-
+/* Main Header */
 .title {
-    font-size: 2.4em;
-    margin: 0;
-}
-
-.title,
-.main-nav a {
-    text-align: center;
-    display: block;
-    padding: 18px 0;
-    width: 100%;
+  font-size: 2.4em;
+  font-weight: bolder;
+  margin: 0;
+  padding: .4em 0;
 }
 
 .main-nav a {
-    font-size: 1em;
-    color: black;
-    text-transform: uppercase;
-    background-color: white;
-    margin-top: .5em;
+  color: black;
+  background-color: white;
+  font-size: 1.2em;
+  text-transform: uppercase;
+  font-weight: bolder;
+  display: block;
+  padding: 10px 15px;
+  margin-top: 5px;
 }
 
 .main-nav a:hover {
-    color: darkgrey;
-}
-
-
-/* - - - - (Layout Containers) - - - - */
-
-.wrap {
-    min-height: calc(100vh - 89px);
-}
-
-.container {
-    width: 95%;
-    margin: 0 auto;
-}
-
-.main-header {
-    background-color: #F8F8F8;
-    padding-top: 1em;
-    padding-bottom: 5em;
-}
-
-.portfolio-nav {
-    background-color: #FFF;
-}
-
-/* - - - - (Images) - - - - */
-
-.profile {
-    text-align: center;
-    line-height: 1.5;
-    width: 100%;
-    padding-top: 4em;
-    padding-bottom: 2em;
-    padding-left: 1em;
-    padding-right: 1em;
-}
-
-.bio {
-    font-size: 1.2em;
-}
-
-/* - - - - Float clearfix - - - - */
-
-.clearfix::after {
-    content: " ";
-    display: table;
-    clear: both;
+  color: darkgrey;
 }
