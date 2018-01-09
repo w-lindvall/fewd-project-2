@@ -87,7 +87,7 @@ footer {
 /* Contact */
 footer strong {
   font-weight: bold;
-  color: black;
+  color: #202020;
 }
 
 footer p {
@@ -95,7 +95,7 @@ footer p {
 }
 
 footer a {
-  color: black;
+  color: #202020;
 }
 
 .footer-link {
