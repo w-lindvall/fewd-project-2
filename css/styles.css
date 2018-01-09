@@ -11,52 +11,59 @@ body {
   font-family: 'Roboto', sans-serif;
 }
 
-h2,
-h3 {
-  font-size: 1.2em;
+img {
+  width: 100%;
+  height: auto;
 }
 
-h3 {
-  font-weight: lighter;
-}
-
-/* Link Styles */
 a {
   text-decoration: none;
 }
 
+.clearfix::after {
+  content: " ";
+  display: table;
+  clear: both;
+}
+
 /* Section Styles */
-.container {
-  width: 90%;
+.wrapper{
   margin: 0 auto;
+  width: 90%;
+  text-align: center;
+}
+
+.container {
+  margin: 0 auto;
+  width: 100%;
 }
 
 .main-header,
 .bio {
   background: #f7f5f0;
-  text-align: center;
-  margin: 0;
-  padding-top: .5em;
+  padding-top: .2em;
   padding-bottom: 3em;
 }
 
-/* Main Header */
-.title {
-  font-size: 2.4em;
-  font-weight: bolder;
-  margin: 0;
-  padding: .4em 0;
+footer {
+  background: #f7f5f0;
+  padding: 10px;
+  padding-top: 2em;
+  padding-bottom: 2em;
+  font-weight: lighter;
 }
 
+/* Main Header */
 .main-nav a {
   color: black;
-  background-color: white;
-  font-size: 1.2em;
   text-transform: uppercase;
   font-weight: bolder;
   display: block;
-  padding: 10px 15px;
+  padding: 10px 15px;  /*---- Makes links more clickable --*/
+  background-color: white;
   margin-top: 5px;
+  margin-left: 10px;
+  margin-right: 10px;
 }
 
 .main-nav a:hover {
@@ -64,38 +71,34 @@ a {
 }
 
 /* Bio */
-.bio-img {
-  margin-top: 7px;
-  margin-bottom: 1em;
-  max-width: 70%;
-}
-
-.bio-text {
-  font-size: 1.2em;
+.bio p {
   color: #808080;
 }
 
-/* Portfolio */
-.portfolio {
-  padding-top: 2em;
-  padding-bottom: 2em;
-}
-.portfolio-img {
-  max-width: 100%;
+.bio img {
+  width: 80%;
 }
 
-.container figure {
-  padding-bottom: 3em;
+/* Portfolio */
+.portfolio-text {
+  padding-bottom: 2em;
 }
 
 /* Contact */
-footer {
-  padding-top: 2em;
-  padding-bottom: 2em;
-  background: #f7f5f0;
+footer strong {
+  font-weight: bold;
+  color: black;
 }
 
-.footer-name {
+footer p {
+  color: #808080;
+}
+
+footer a {
+  color: black;
+}
+
+.footer-link {
   display: block;
   float: left;
 }
@@ -103,9 +106,4 @@ footer {
 .footer-top {
   display: block;
   float: right;
-}
-
-.contact {
-  font-size: 1.2em;
-  color: #808080;
 }
