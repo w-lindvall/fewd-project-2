@@ -5,25 +5,24 @@
     <meta charset="UTF-8">
     <title>Project 2</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/styles.css">
 </head>
 
 <body>
+
     <div class="wrap">
 
-        <div class="container">
-            <nav class="main-header">
+        <header class="container clearfix">
 
-                <h1 class="title" id="top">Student Name</h1>
-                <ul class="main-nav">
-                    <li><a href="#">Home</a></li>
-                    <li><a href="#portfolio">Portfolio</a></li>
-                    <li><a href="#contact">Contact</a></li>
-                </ul>
+            <h1 class="name" id="top">Student Name</h1>
 
-            </nav><!--/.main-header-->
+            <ul class="main-nav">
+                <li><a href="#">Home</a></li>
+                <li><a href="#portfolio">Portfolio</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
 
             <div class="bio">
                 <figure>
@@ -37,83 +36,91 @@
 
                 </figure>
             </div><!--/.bio-->
+
+        </header>
+
+        <div id="portfolio" class="portfolio container clearfix">
+
+            <h2>Portfolio</h2>
+
+                <figure>
+                    <img src="img/portfolio-1.png" alt="Marketing image icon">
+                    <figcaption>
+                        <h3>Marketing Page</h3>
+                        <p>This project shows the front page of a marketing website meant
+                            for a specific business I'm interested in.</p>
+                    </figcaption>
+                </figure>
+
+                <figure>
+                    <img src="img/portfolio-2.png" alt="Search image icon">
+                    <figcaption>
+                        <h3>Search Page</h3>
+                        <p>This project searches through a specific database to find information that
+                            the user is trying to look up.</p>
+                    </figcaption>
+                </figure>
+
+                <figure>
+                    <img src="img/portfolio-3.png" alt="Travel app icon">
+                    <figcaption>
+                        <h3>Travel App</h3>
+                        <p>This project compares travel times based on different transportation methods
+                            and tells you the best one.</p>
+                    </figcaption>
+                </figure>
+
+                <figure>
+                    <img src="img/portfolio-4.png" alt="Maps of favorite spots icon">
+                    <figcaption>
+                        <h3>Map of Favorite Spots</h3>
+                        <p>This project uses mapping apis to plot points for my favorite spots in the city
+                            for a do-it-yourself walking tour.</p>
+                    </figcaption>
+                </figure>
+
+                <figure>
+                    <img class="portfolio-img" src="img/portfolio-5.png" alt="Photo gallery icon">
+                    <figcaption class="portfolio-text">
+                        <h3>Photo Gallery</h3>
+                        <p>This project shows pictures from a recent trip to the viewer and allows them to
+                            easily navigate through photos.</p>
+                    </figcaption>
+                </figure>
+
+                <figure>
+                    <img class="portfolio-img" src="img/portfolio-6.png" alt="Calculator icon">
+                    <figcaption class="portfolio-text">
+                        <h3>Calculator</h3>
+                        <p>Someone can enter in the numbers they want, and press the big blue button and get the
+                            result.</p>
+                    </figcaption>
+                </figure>
+
         </div>
 
-        <h2 id="portfolio">Portfolio</h2>
-        <div class="container primary col">
+        <footer class="contact container">
 
-            <figure>
-                <img class="portfolio-img" src="img/portfolio-1.png" alt="Marketing image icon">
-                <figcaption class="portfolio-text">
-                    <h3>Marketing Page</h3>
-                    <p>This project shows the front page of a marketing website meant
-                        for a specific business I'm interested in.</p>
-                </figcaption>
-            </figure>
-
-            <figure>
-                <img class="portfolio-img" src="img/portfolio-2.png" alt="Search image icon">
-                <figcaption class="portfolio-text">
-                    <h3>Search Page</h3>
-                    <p>This project searches through a specific database to find information that
-                        the user is trying to look up.</p>
-                </figcaption>
-            </figure>
-
-        </div><!--/.primary-col-->
-
-        <div class="container secondary col">
-
-            <figure>
-                <img class="portfolio-img" src="img/portfolio-3.png" alt="Travel app icon">
-                <figcaption class="portfolio-text">
-                    <h3>Travel App</h3>
-                    <p>This project compares travel times based on different transportation methods
-                        and tells you the best one.</p>
-                </figcaption>
-            </figure>
-
-            <figure>
-                <img class="portfolio-img" src="img/portfolio-4.png" alt="Maps of favorite spots icon">
-                <figcaption class="portfolio-text">
-                    <h3>Map of Favorite Spots</h3>
-                    <p>This project uses mapping apis to plot points for my favorite spots in the city
-                        for a do-it-yourself walking tour.</p>
-                </figcaption>
-            </figure>
-
-        </div><!--/.secondary-col-->
-
-        <div class="container tertiary col">
-
-            <figure>
-                <img class="portfolio-img" src="img/portfolio-5.png" alt="Photo gallery icon">
-                <figcaption class="portfolio-text">
-                    <h3>Photo Gallery</h3>
-                    <p>This project shows pictures from a recent trip to the viewer and allows them to
-                        easily navigate through photos.</p>
-                </figcaption>
-            </figure>
-
-            <figure>
-                <img class="portfolio-img" src="img/portfolio-6.png" alt="Calculator icon">
-                <figcaption class="portfolio-text">
-                    <h3>Calculator</h3>
-                    <p>Someone can enter in the numbers they want, and press the big blue button and get the
-                        result.</p>
-                </figcaption>
-            </figure>
-
-        </div><!--/.tertiary-col-->
-
-        <footer class="clearfix">
             <h2 id="contact">Contact</h2>
                 <p>If you're interested in chatting or want more information about what I've been working on,
                     I'd love to hear from you!<br><br>
                     Phone  <strong>+ 1 (111) 555-1234</strong><br>
                     E-mail  <a href="mailto:email@yoursite.com"><strong>email@yoursite.com</strong></a></p>
                 <br><hr>
-            <a href="#" class="footer-link">Student name</a><a href="#top" class="footer-top">Back to top</a>
+
+            <a href="#" class="footer-link">Student name</a>
+            <nav class="mobile">
+                <a href="#top" class="footer-top">Back to top</a>
+            </nav>
+
+            <nav class="medium">
+                <a href="#" class="footer-medium">Home</a><a href="#portfolio" class="footer-medium">Portfolio</a>
+                <a href="#contact" class="footer-medium">Contact</a>
+            </nav>
+
+            <nav class="large">
+                <a href="#top" class="footer-top">Back to top</a>
+            </nav>
 
         </footer>
 

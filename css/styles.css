@@ -1,4 +1,4 @@
-/* Global Layout Set-up */
+/* - - - - Global Layout Set-up - - - - */
 * { 
   box-sizing: border-box;
 }
@@ -8,7 +8,7 @@ body {
   padding: 0;
   line-height: 1.6;
   text-align: center;
-  font-family: 'Roboto', sans-serif;
+  font-family: 'Open Sans', sans-serif;
 }
 
 img {
@@ -18,6 +18,19 @@ img {
 
 a {
   text-decoration: none;
+  color: black;
+}
+
+h1 {
+  font-weight: bolder;
+}
+
+h2 {
+  font-weight: bold;
+}
+
+h3 {
+  font-weight: lighter;
 }
 
 .clearfix::after {
@@ -26,11 +39,10 @@ a {
   clear: both;
 }
 
-/* Section Styles */
+
+/* - - - - Section Styles - - - - */
 .wrapper{
   margin: 0 auto;
-  width: 90%;
-  text-align: center;
 }
 
 .container {
@@ -38,53 +50,62 @@ a {
   width: 100%;
 }
 
-.main-header,
-.bio {
+header {
   background: #f7f5f0;
   padding-top: .2em;
   padding-bottom: 3em;
 }
 
-footer {
-  background: #f7f5f0;
-  padding: 10px;
+.portfolio {
   padding-top: 2em;
-  padding-bottom: 2em;
-  font-weight: lighter;
 }
 
-/* Main Header */
+footer {
+  padding: 10px;
+  background: #f7f5f0;
+
+  padding-top: 2em;
+  padding-bottom: 4em;
+}
+
+/* - - - - Main Header - - - - */
 .main-nav a {
-  color: black;
   text-transform: uppercase;
-  font-weight: bolder;
-  display: block;
-  padding: 10px 15px;  /*---- Makes links more clickable --*/
+  font-weight: bold;
+
+  padding: 15px 15px;  /*---- Makes links more clickable --*/
   background-color: white;
+  display: block;
+
   margin-top: 5px;
-  margin-left: 10px;
-  margin-right: 10px;
+  margin-left: 15px;
+  margin-right: 15px;
 }
 
 .main-nav a:hover {
   color: darkgrey;
 }
 
-/* Bio */
+.bio {
+  padding-top: 3em;
+}
+
 .bio p {
   color: #808080;
+  font-size: 1.3em;
+  font-weight: lighter;
 }
 
 .bio img {
-  width: 80%;
+  width: 70%;
 }
 
-/* Portfolio */
-.portfolio-text {
+/* - - - - Portfolio - - - - */
+.portfolio p {
   padding-bottom: 2em;
 }
 
-/* Contact */
+/* - - - - Contact - - - - */
 footer strong {
   font-weight: bold;
   color: #202020;
@@ -98,6 +119,10 @@ footer a {
   color: #202020;
 }
 
+footer hr {
+  margin-bottom: 2em;
+}
+
 .footer-link {
   display: block;
   float: left;
@@ -105,5 +130,116 @@ footer a {
 
 .footer-top {
   display: block;
+  text-transform: uppercase;
   float: right;
 }
+
+footer nav.medium {
+  display: none;
+}
+
+footer nav.large {
+  display: none;
+}
+
+
+/* - - - - Media Queries - - - - */
+@media (min-width: 768px) {
+
+  /* - - - - Section Styles - - - - */
+
+  /* - - - - Nav - - - - */
+  .name {
+    padding-top: 1em;
+  }
+
+  .main-header {
+    position: fixed;
+    z-index: 999;
+    width: 100%;
+    top: 0;
+  }
+
+  .main-nav li {
+    display: inline-block;
+    margin-left: 10px;
+  }
+
+  .main-nav a {
+    background-color: #f7f5f0;
+  }
+
+  .bio img {
+    display: inline-block;
+    float: right;
+    width: 40%;
+  }
+
+  .bio figcaption {
+    font-size: 1.1em;
+    text-align: left;
+    display: inline-block;
+    float: left;
+    position: relative;
+    top: -15px;
+    width: 60%;
+    padding-right: 10px;
+  }
+
+  /* - - - - Portfolio - - - - */
+  .portfolio {
+    padding-bottom: 2em;
+  }
+
+  .portfolio figure {
+    float: left;
+    background-color: white;
+    width: 50%;
+    margin: 0;
+  }
+
+  .portfolio img {
+    width: 90%;
+  }
+
+  .portfolio figcaption {
+    padding-bottom: 2em;
+  }
+
+  .portfolio p {
+    padding: 0 70px;
+  }
+
+  .portfolio h2 {
+    padding-bottom: 1em;
+  }
+
+  /* - - - - Bio - - - - */
+  footer p {
+    padding: 0 200px;
+  }
+
+  /* - - - - Footer - - - - */
+  footer nav.mobile {
+    display: none;
+  }
+
+  footer nav.medium {
+    display: block;
+  }
+
+  .medium {
+    float: right;
+  }
+
+  .footer-link {
+    display: block;
+    float: left;
+  }
+
+  .footer-medium {
+    display: block;
+    float: left;
+    margin-left: 10px;
+    text-transform: uppercase;
+  }
